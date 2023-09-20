@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&family=IM+Fell+English+SC&display=swap');
+body {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #747277, #c2bebe);
+}
+
+h1 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 50px;
+  color: rgba(97, 97, 97, 0.733);
+}
+
+/*Botões*/
+
+#buttons-container {
+  margin-bottom: 20px;
+}
+
+#buttons-container button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: linear-gradient(rgb(207 207 207), rgb(156 156 156));
+  color: aliceblue;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 10px;
+  border: 2px solid rgb(151, 144, 144);
+}
+
+/*Jogo*/
+#container {
+  width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*Centralizar uma div na tela*/
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  border: 5px solid rgb(0, 0, 0);
+  height: 100px;
+  flex: 1 1 33%; /*Garantir as três div's por linha*/
+  box-sizing: border-box;
+}
+
+#block-1,
+#block-2,
+#block-3 {
+  border-top: none;
+}
+
+#block-1,
+#block-4,
+#block-7 {
+  border-left: none;
+}
+
+#block-7,
+#block-8,
+#block-9 {
+  border-bottom: none;
+}
+
+#block-3,
+#block-6,
+#block-9 {
+  border-right: none;
+}
+
+/*Símbolos*/
+
+.x {
+  font-size: 75px;
+  color: rgb(112, 108, 116);
+  display: inline-block;
+}
+
+.o {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(89, 89, 92);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*Placar*/
+#scoreboard-container {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 25px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#x-scoreboard {
+  color: rgb(112, 108, 116);
+  margin-right: 3px;
+}
+
+#o-scoreboard {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgb(89, 89, 92);
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.score-box {
+  display: inline-block;
+  margin: 0 20px;
+  /*Espaçamento entre os spans*/
+}
+
+/*Mensagem*/
+#message p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 239px;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background-color: rgb(104, 104, 104);
+  font-size: 50px;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none !important;
+}
